@@ -8,6 +8,8 @@
 .display-temp{
 
     background-image: url(../images/france.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -24,6 +26,7 @@
     width: 32%;
     border-radius: 8px;
 }
+
 
 .display-temp .temp-card:first-of-type {
     background-color: #3199ab;
@@ -76,4 +79,18 @@
     font-size: 14px;
     color: #455a64;
     text-shadow: 0 0 1px #455a64,  0 0 1px #455a64;
+}
+
+@media only screen and (max-width: 609px) {
+    .city-tempz {
+flex-direction: column;    }
+.temp-card{
+    width: 80% !important;
+
+    margin: auto !important;
+    margin-bottom: 30px !important;
+}
+.display-temp{
+    height: auto !important;
+}
 }
